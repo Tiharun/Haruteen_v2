@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.day {
+  min-width: var(--hit-min);
+  min-height: var(--hit-min);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+/* 선택은 배경·굵은 글씨로도 드러나 색만으로 구분하지 않는다 */
+.dayOn {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.warning {
+  padding: var(--space-3);
+  border: 1px solid var(--warning);
+  border-radius: var(--radius);
+  background: var(--warning-soft);
+  color: var(--warning);
+  font-size: 0.9rem;
+}
+
+.note {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  resize: vertical;
+}
+
+.note[aria-invalid='true'] {
+  border-color: var(--danger);
+}

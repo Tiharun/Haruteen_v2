@@ -1,0 +1,125 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.phase {
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.clock {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.setInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.dots {
+  display: inline-flex;
+  gap: var(--space-1);
+}
+
+.dot,
+.dotOn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+}
+
+.dotOn {
+  background: var(--accent);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.controls button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.shortcutHint {
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+}
+
+.kbd {
+  padding: 0 var(--space-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  font-size: 0.8rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.total {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.empty {
+  color: var(--text-muted);
+}
+
+.quick {
+  margin-top: var(--space-4);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 767px) {
+  .clock {
+    font-size: 2.8rem;
+  }
+}

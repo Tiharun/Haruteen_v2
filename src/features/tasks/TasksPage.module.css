@@ -1,0 +1,12 @@
+.list {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.clearRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--space-3);
+}

@@ -1,0 +1,76 @@
+.root {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .root {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+  }
+}
+
+.bar {
+  display: flex;
+  height: var(--tabbar-height);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.active {
+  color: var(--accent);
+}
+
+.more {
+  position: absolute;
+  right: var(--space-2);
+  bottom: calc(var(--tabbar-height) + var(--space-2));
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: var(--space-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-float);
+}
+
+.moreLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--hit-min);
+  padding: 0 var(--space-3);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.moreLink:hover {
+  background: var(--surface-2);
+}
+
+.moreLink.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}

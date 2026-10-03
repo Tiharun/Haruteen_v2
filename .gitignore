@@ -1,0 +1,17 @@
+node_modules
+dist
+dev-dev-dist
+*.local
+.DS_Store
+*.log
+.claude/settings.local.json
+state*.json
+.claude/
+.browsers/
+playwright-report/
+test-results/
+.playwright/
+
+# 설계·작업 문서와 Claude 지침은 저장소에 올리지 않는다
+docs/
+CLAUDE.md

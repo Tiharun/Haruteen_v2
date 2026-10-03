@@ -1,0 +1,49 @@
+/* 모바일(기본): 1열. PC(≥1024px): 왼쪽 습관+할 일, 오른쪽 타이머+알림 */
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.main {
+  min-width: 0;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-width: 0;
+}
+
+.heading {
+  margin-bottom: var(--space-3);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.empty {
+  color: var(--text-muted);
+}
+
+@media (min-width: 1024px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    align-items: start;
+  }
+
+  .side {
+    position: sticky;
+    top: var(--space-5);
+  }
+}

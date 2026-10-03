@@ -1,0 +1,73 @@
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 420px;
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.range {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.counts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.countRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 0.9rem;
+}
+
+.warning {
+  color: var(--danger);
+  font-weight: 600;
+}

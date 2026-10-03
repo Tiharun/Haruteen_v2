@@ -1,0 +1,67 @@
+.wrap {
+  overflow-x: auto;
+  padding-bottom: var(--space-1);
+}
+
+.svg {
+  display: block;
+  color: var(--habit-color, var(--accent));
+}
+
+.axis {
+  fill: var(--text-muted);
+  font-size: 10px;
+}
+
+.done {
+  fill: var(--habit-color, var(--accent));
+}
+
+.partial {
+  fill: var(--habit-color, var(--accent));
+}
+
+/* 미달성 예정일: 속이 빈 테두리 */
+.missed {
+  fill: none;
+  stroke: var(--habit-color, var(--accent));
+  stroke-width: 1.5;
+}
+
+/* 비예정일: 빗금 */
+.off {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+/* 시작 전·보관 후, 주 N회 습관의 기록 없는 날 */
+.untracked,
+.blank {
+  fill: var(--surface-2);
+}
+
+.future {
+  fill: var(--border-strong);
+}
+
+.hatch {
+  stroke: var(--text-subtle);
+  stroke-width: 1;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}

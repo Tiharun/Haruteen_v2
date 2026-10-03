@@ -1,0 +1,58 @@
+.stepper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.date {
+  min-width: 5.5em;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.input {
+  width: 4.5em;
+  min-height: var(--hit-min);
+  padding: 0 var(--space-2);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.goal {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.achieved {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0 var(--space-2);
+  border-radius: 999px;
+  background: var(--success-soft);
+  color: var(--success);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.input[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.error {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--danger);
+}
+
+/* disabled 대신 aria-disabled를 써서 포커스가 가고 이유 툴팁이 보이게 한다 */
+.step[aria-disabled='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

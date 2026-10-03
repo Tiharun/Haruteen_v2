@@ -1,0 +1,26 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-5) var(--space-5) var(--space-6);
+}
+
+.content {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: var(--space-4) var(--space-4) calc(var(--tabbar-height) + var(--space-5));
+  }
+
+  /* 미니 타이머 바가 탭 바 위에 떠 있으면 그만큼 더 비운다 */
+  .withMiniBar {
+    padding-bottom: calc(var(--tabbar-height) + var(--minibar-height) + var(--space-5));
+  }
+}

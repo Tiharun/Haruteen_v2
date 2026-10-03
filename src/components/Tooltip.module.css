@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.tip {
+  position: absolute;
+  bottom: calc(100% + var(--space-1));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-toast);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius);
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  pointer-events: none;
+}

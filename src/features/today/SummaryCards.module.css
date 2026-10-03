@@ -1,0 +1,47 @@
+.cards {
+  display: grid;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--text-subtle);
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .value {
+    font-size: 1.15rem;
+  }
+}

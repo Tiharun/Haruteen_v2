@@ -1,0 +1,109 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.checkHit {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--hit-min);
+  height: var(--hit-min);
+  cursor: pointer;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-1);
+  min-width: 0;
+  min-height: var(--hit-min);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.main:hover {
+  background: var(--surface-2);
+}
+
+.title {
+  max-width: 100%;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.doneTitle {
+  color: var(--text-subtle);
+  text-decoration: line-through;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.progress,
+.due,
+.priority {
+  color: var(--text-muted);
+}
+
+/* 색만으로 구분하지 않도록 글자("지남 ·", "오늘 ·")도 함께 쓴다 */
+.overdue {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.today {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.priorityHigh {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0 var(--space-2);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.focusTime {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.play {
+  flex: none;
+  margin-top: var(--space-1);
+}

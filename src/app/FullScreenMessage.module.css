@@ -1,0 +1,30 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 100vh;
+  padding: var(--space-5) var(--space-4);
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.text {
+  max-width: 480px;
+  color: var(--text-muted);
+}
+
+.detail {
+  max-width: 480px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  color: var(--text-subtle);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
